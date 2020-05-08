@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 project(CPackTest)
 
 add_executable(CPackTest MACOSX_BUNDLE CPackTest.cxx)
-install(TARGETS CPackTest RUNTIME DESTINATION . BUNDLE DESTINATION .)
+install(TARGETS CPackTest RUNTIME DESTINATION bin BUNDLE DESTINATION .)
 
 # CPack
 if(WIN32)
